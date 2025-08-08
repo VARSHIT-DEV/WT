@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(65, 62, 62);
+}
+.grided{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, 1fr);
+}
+
+img{
+    margin: 9px;
+}

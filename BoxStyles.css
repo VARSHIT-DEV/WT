@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(65, 62, 62);
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(213, 46, 46);
+    color: rgb(78, 90, 101);
+}
+.d1{
+    background-color: rgb(70, 13, 13);
+    margin: 20px;
+    padding: 20px;
+    padding-top:  30px;
+    border: 10px solid rgb(33, 10, 10);
+}
+.d2{
+    background-color: rgb(82, 19, 19);
+    margin:90px;
+    padding: 100px;
+    border: 10px solid rgb(111, 115, 136);
+}
+
+.d3{
+    background-color: rgb(98, 44, 44);
+    margin: 100px;
+    padding: 75px;
+    color: rgb(3, 1, 1);
+    padding-top:  45px;
+    border: 10px solid rgb(132, 79, 79);
+}

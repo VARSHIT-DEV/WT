@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>3x3 Photo Gallery</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+  }
+  .gallery-item {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .caption {
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #333;
+  }
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .gallery {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 480px) {
+    .gallery {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</head>
+<body>
+  <h1>3x3 Photo Gallery</h1>
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="cvr.jfif" alt="Photo 1" />
+      <div class="caption">Caption 1</div>
+    </div>
+    <div class="gallery-item">
+      <img src="cvr.jfif" alt="Photo 2" />
+      <div class="caption">Caption 2</div>
+    </div>
+    <div class="gallery-item">
+      <img src="cvr.jfif" alt="Photo 3" />
+      <div class="caption">Caption 3</div>
+    </div>
+    <div class="gallery-item">
+      <img src="cvr.jfif" alt="Photo 4" />
+      <div class="caption">Caption 4</div>
+    </div>
+    <div class="gallery-item">
+      <img src="cvr.jfif" alt="Photo 5" />
+      <div class="caption">Caption 5</div>
+    </div>
+    <div class="gallery-item">
+      <img src="cvr.jfif" alt="Photo 6" />
+      <div class="caption">Caption 6</div>
+    </div>
+    <div class="gallery-item">
+      <img src="cvr.jfif" alt="Photo 7" />
+      <div class="caption">Caption 7</div>
+    </div>
+    <div class="gallery-item">
+      <img src="cvr.jfif" alt="Photo 8" />
+      <div class="caption">Caption 8</div>
+    </div>
+    <div class="gallery-item">
+      <img src="cvr.jfif" alt="Photo 9" />
+      <div class="caption">Caption 9</div>
+    </div>
+  </div>
+</body>
+</html>

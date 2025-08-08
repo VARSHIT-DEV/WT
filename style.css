@@ -1,0 +1,45 @@
+/* create a 3*3 photo gallery with grid gaps, grid , image captions and responsive rezizeing */
+.hi{
+    display: flex;
+    border: 15px solid black;
+    background-color: darkgoldenrod;
+    padding: 10px;
+    margin: 10px;
+    width: 50%;
+    height: fit-content;
+    border-radius: 10px;
+}
+.image:hover{
+    border-radius: 15px;
+
+}
+.cont:hover{
+    font-size: larger;
+    background-color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.cont {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* .dialog-box {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 5px;
+    padding: 8px 12px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.cont:hover .dialog-box,
+.cont:focus .dialog-box {
+    display: block;
+} */
