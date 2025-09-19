@@ -1,0 +1,30 @@
+-- Insert procedure
+CREATE OR REPLACE PROCEDURE insert_nocap(p_name IN VARCHAR2, p_roll IN NUMBER) AS
+BEGIN
+    INSERT INTO nocap(name, roll_no) VALUES (p_name, p_roll);
+    COMMIT;
+END;
+/
+
+-- Select procedure (returns REF CURSOR)
+CREATE OR REPLACE PROCEDURE get_all_nocap(p_recordset OUT SYS_REFCURSOR) AS
+BEGIN
+    OPEN p_recordset FOR SELECT * FROM nocap;
+END;
+/
+
+-- Update procedure
+CREATE OR REPLACE PROCEDURE update_nocap(p_roll IN NUMBER, p_name IN VARCHAR2) AS
+BEGIN
+    UPDATE nocap SET name = p_name WHERE roll_no = p_roll;
+    COMMIT;
+END;
+/
+
+-- Delete procedure
+CREATE OR REPLACE PROCEDURE delete_nocap(p_roll IN NUMBER) AS
+BEGIN
+    DELETE FROM nocap WHERE roll_no = p_roll;
+    COMMIT;
+END;
+/
